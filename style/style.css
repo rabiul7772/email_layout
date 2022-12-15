@@ -1,0 +1,86 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      font-size: 24px;
+      color: #343a40;
+      height: 100vh;
+      text-align: center;
+      font-weight: bold;
+
+      display: grid;
+      grid-template-columns: 80px 400px 1fr 250px;
+      grid-template-rows: 80px 1fr;
+
+    }
+
+    nav,
+    section,
+    main,
+    aside {
+      padding-top: 24px;
+    }
+
+    nav {
+      background-color: #343a40;
+      color: #fff;
+      grid-row: 1/-1;
+    }
+
+    menu {
+      background: #7048e8;
+
+      grid-column: 2/-1;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 40px;
+    }
+
+    button {
+      displaly: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      color: #fff;
+      padding: 8px 12px;
+      background: #5f3dc4;
+
+    }
+
+    button:last-child {
+      background-color: rgb(194, 65, 65);
+      /* to move trash to the right side of the menu */
+      margin-left: auto;
+    }
+
+    section {
+      background-color: #e9ecef;
+      padding: 40px;
+      overflow: scroll;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+    }
+
+    .email {
+      background-color: #adb5bd;
+      height: 96px;
+      flex-shrink: 0;
+
+      /* to center eamil 1,2,3.... */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    aside {
+      background-color: #e9ecef;
+    }
